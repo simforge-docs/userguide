@@ -1,0 +1,18 @@
+site_name: UAVSim APP
+
+theme:
+  name: material  # 用 material 主题
+  palette:
+    primary: blue
+  language: zh
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  
+nav:
+  - 首页: index.md
+  - 正文: UAVSim.md
