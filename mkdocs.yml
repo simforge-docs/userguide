@@ -12,7 +12,7 @@ plugins:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
-  
+
 nav:
-  - 首页: index.md
-  - 正文: UAVSim.md
+#  - 首页: index.md
+  - UAVSim: UAVSim.md
