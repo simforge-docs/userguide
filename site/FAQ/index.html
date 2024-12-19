@@ -1,0 +1,941 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../personal/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>第六章 FAQ - UAVSim APP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-faq" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="UAVSim APP" class="md-header__button md-logo" aria-label="UAVSim APP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UAVSim APP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第六章 FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="UAVSim APP" class="md-nav__button md-logo" aria-label="UAVSim APP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    UAVSim APP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_one/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_two/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章 特色功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第五章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第六章 FAQ
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第六章 FAQ
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      图形相关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图形相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vncvdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC和VDI有什么区别？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何使平台界面进入全屏模式？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC模式启动图形作业，软件窗口最小化后，或者存在多个窗口，如何切换选择？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vncvnc60vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC模式启动图形作业，VNC窗口关闭或60分钟后重新进入平台，如何重新进入VNC窗口？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VDI模式启动图形作业，软件窗口最小化后，该如何恢复？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何切换图形应用的运行模式？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件、目录命名有什么要求？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何在线编辑文件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      上传文件速度慢？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作业管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业被系统强制终止
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新进入门户后，运行的作业不在作业管理器首页？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="资源管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      队列的分类?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是远程队列？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      计费相关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="计费相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      体验金和余额什么关系？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      图形相关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图形相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vncvdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC和VDI有什么区别？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何使平台界面进入全屏模式？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC模式启动图形作业，软件窗口最小化后，或者存在多个窗口，如何切换选择？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vncvnc60vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC模式启动图形作业，VNC窗口关闭或60分钟后重新进入平台，如何重新进入VNC窗口？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VDI模式启动图形作业，软件窗口最小化后，该如何恢复？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何切换图形应用的运行模式？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件、目录命名有什么要求？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何在线编辑文件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      上传文件速度慢？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作业管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业被系统强制终止
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新进入门户后，运行的作业不在作业管理器首页？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="资源管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      队列的分类?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是远程队列？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      计费相关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="计费相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      体验金和余额什么关系？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="6-faq">第6章 FAQ</h1>
+<h2 id="_1">图形相关</h2>
+<h3 id="vncvdi">VNC和VDI有什么区别？</h3>
+<ul>
+<li>
+<p>VDI：虚拟远程桌面接口</p>
+</li>
+<li>
+<p>VNC：虚拟网络控制台</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">图形界面</th>
+<th style="text-align: center;">额外操作</th>
+<th style="text-align: center;">是否额外付费</th>
+<th style="text-align: center;">性能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">VDI</td>
+<td style="text-align: center;">开通远程桌面</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">高</td>
+</tr>
+<tr>
+<td style="text-align: center;">VNC</td>
+<td style="text-align: center;">无需额外步骤</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">一般</td>
+</tr>
+</tbody>
+</table>
+<p>{ref}<code>仿真计算的GUI模式</code>和<strong>图形应用</strong>均可使用上述两种方式提交。</p>
+<h3 id="_2">如何使平台界面进入全屏模式？</h3>
+<p>右键点击平台界面的空白处，进入全屏模式</p>
+<p><img alt="全屏" src="../figs/faq/quanping.png" /></p>
+<h3 id="vnc">VNC模式启动图形作业，软件窗口最小化后，或者存在多个窗口，如何切换选择？</h3>
+<p>鼠标中键，根据窗口名称单击选择，可切换出对应窗口</p>
+<h3 id="vncvnc60vnc">VNC模式启动图形作业，VNC窗口关闭或60分钟后重新进入平台，如何重新进入VNC窗口？</h3>
+<p>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，找到对应的图形作业，单击作业号进入作业详情，在该作业的详情页面右上角单击<strong>图形窗口</strong>或通过作业管理作业号右边小图标<img alt="" src="../figs/web.png" />即可重新进入。</p>
+<p><img alt="" src="../figs/warn.png" /> <strong>警告</strong> 
+不必要的VNC作业进程注意及时关闭，以免造成队列资源浪费和费用损失</p>
+<h3 id="vdi">VDI模式启动图形作业，软件窗口最小化后，该如何恢复？</h3>
+<p>解锁底部dock栏<img alt="" src="../figs/fre/unlock.png" />，单击软件的窗口即可。</p>
+<h3 id="_3">如何切换图形应用的运行模式？</h3>
+<p>已有实例，右击图标，选择默认实例，即可切换；若无对应实例，新建实例，设置图形应用以VNC或VDI模式启动。参考{ref}<code>配置实例</code>。</p>
+<h2 id="_4">数据管理</h2>
+<h3 id="_5">文件、目录命名有什么要求？</h3>
+<ul>
+<li>文件、目录的命名不要带特殊字符（<strong>包括空格</strong>），可能会影响软件运行。建议使用A1_B2这样的命名方式。</li>
+<li>文件命名字符长度不可以超过30个字符</li>
+</ul>
+<h3 id="_6">如何在线编辑文件？</h3>
+<p>在线编辑文件有两种方式：一是通过数据管理，右击进行文本编辑；二是对于一些特殊后缀的文件，可开通VDI，通过shell 命令进行查看编辑。</p>
+<h3 id="_7">上传文件速度慢？</h3>
+<p>可通过ftp公网上传</p>
+<ol>
+<li>使用任意客户端（FileZilla、WinScp、Xftp等）</li>
+<li>网络连接地址：ftp.hpc.simforge.cn</li>
+<li>网络连接端口：21</li>
+<li>连接用户名：神工坊账号、密码
+<em>注1：FileZilla下载地址：https://www.filezilla.cn/download</em>
+<em>注1：WinScp下载地址:https://winscp.net/eng/download.php</em></li>
+</ol>
+<h2 id="_8">作业管理</h2>
+<h3 id="_9">作业被系统强制终止</h3>
+<p>请确认作业提交时是否设置了运行时限。</p>
+<h3 id="_10">重新进入门户后，运行的作业不在作业管理器首页？</h3>
+<p>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，将显示条数增加以增加排序范围。</p>
+<p><img alt="" src="../figs/faq/shaixuan.png" /></p>
+<p>之后根据需要点击排序功能，如“状态”。</p>
+<p><img alt="" src="../figs/faq/shaixuan2.png" /></p>
+<h2 id="_11">资源管理</h2>
+<h3 id="_12">队列的分类?</h3>
+<p>队列一般分为：
+- CPU计算节点：如q_x86_sf
+- GPU渲染节点：如GPU_sf</p>
+<p><img alt="" src="../figs/warn.png" /><strong>警告</strong> 请不要在使用<strong>仿真计算</strong>应用时提交至<strong>GPU渲染队列</strong>，作业将被管理员杀掉。</p>
+<p><img alt="" src="../figs/warn.png" /><strong>警告</strong> 请不要在使用<strong>图形应用</strong>时提交至<strong>CPU计算队列</strong>，作业将被管理员杀掉。</p>
+<h3 id="_13">什么是远程队列？</h3>
+<p>远程队列是相较于本地队列而言的。神工坊2.0平台<strong>可调取的资源不局限于本地集群</strong>，也包含无锡超算甚至其他超算背后的海量资源。某些应用部署在其他集群，统一称为远程应用，提交作业时需要使用对应的远程队列。</p>
+<p>例如：使用应用<strong>Abaqus614-u</strong>时，队列选择下拉框中的q_x86_sf即为本地队列，q_intel_share、q_x86_share即为远程队列，您可根据需求选择所用的队列。具体队列资源介绍见{ref}<code>平台队列资源</code></p>
+<h2 id="_14">计费相关</h2>
+<h3 id="_15">体验金和余额什么关系？</h3>
+<ul>
+<li>体验金是平台赠送金额，余额是用户自己充值的金额。扣款时，会优先扣除体验金，之后扣除余额。当全部扣除完毕时，48小时内平台只会对用户进行提醒。超过48小时，用户的作业和虚拟机桌面会被关闭。</li>
+<li>在平台界面的右上角点击<img alt="人" src="../figs/faq/people.png" />，选择【余额管理】可查看相关信息。</li>
+</ul>
+<p><img alt="余额管理" src="../figs/faq/trial_fee.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
