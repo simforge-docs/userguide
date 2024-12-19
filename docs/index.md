@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+% Lumache documentation master file, created by
+% sphinx-quickstart on Thu Oct 28 08:29:03 2021.
+% You can adapt this file completely to your liking, but it should at least
+% contain the root `toctree` directive.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+%```{include} ../../README.md
+%:relative-images:
+%```
 
-## Commands
+# simforge documentation
+欢迎使用  “神工坊”  高性能仿真平台用户门户手册。本手册提供的信息可以帮助您快速了解  “神工坊”  高性能仿真平台用户门户，并能够指导您开始使用  “神工坊”  高性能仿真平台用户门户。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+%Check out {doc}`/usage` for further information,
+%and {ref}`Installation` for installation instructions.
 
-## Project layout
+%```{warning}
+%This library is under active development.
+%```
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+```{toctree}
+:caption: "First Step"
+:maxdepth: 3
+chapter_one
+chapter_two
+```
+```{toctree}
+:caption: "User's documentation"
+:maxdepth: 3
+fre
+feature
+personal
+FAQ
+```
