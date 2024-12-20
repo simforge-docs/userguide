@@ -1,0 +1,23 @@
+site_name: simforge-user-guide  # 站点名称
+
+theme:
+  name: material        # 用 material 主题
+  palette:
+    primary: blue
+  language: zh
+
+plugins:                # 搜索插件
+  - search
+
+markdown_extensions:    # 代码高亮插件
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:                    # 左侧导航栏
+#  - 首页: index.md
+  - 第一章 简介: chapter_one.md
+  - 第二章 案例演示: chapter_two.md
+  - 第三章 案例演示: fre.md
+  - 第四章 特色功能: feature.md
+  - 第五章 案例演示: personal.md
+  - 第六章 FAQ: FAQ.md 
