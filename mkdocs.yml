@@ -1,4 +1,4 @@
-site_name: UAVSim APP  
+site_name: simforge-user-guide  # 站点名称
 
 theme:
   name: material        # 用 material 主题
