@@ -1,0 +1,2030 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter_one/">
+      
+      
+        <link rel="next" href="../fre/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>第二章 案例演示 - simforge-user-guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="simforge-user-guide" class="md-header__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            simforge-user-guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第二章 案例演示
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="simforge-user-guide" class="md-nav__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    simforge-user-guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_one/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第二章 案例演示
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第二章 案例演示
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 访问用户门户
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 访问用户门户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户注册
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户登录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户退出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP用户申请
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP用户权益
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      重置密码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 仿真计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 仿真计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例一：Abaqus 仿真计算应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例一：Abaqus 仿真计算应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 工程文件上传
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 上传
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 启动应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 作业参数设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 作业提交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 查看输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 计算完成，查看结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starccm" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例二：StarCCM+ 仿真计算应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例二：StarCCM+ 仿真计算应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 启动应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 作业参数设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 作业详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 软件并行设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 在线协同
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 共享作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 共享成员选择
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 共享成功
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 协同作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例三：脚本提交
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例三：脚本提交">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 示例文件获取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 复制建立新的提交文件夹
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 上传自己的计算文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-demosh" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 修改demo.sh文件中的参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 提交作业任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 可至神工坊 [作业管理] 查看本次作业提交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 结果文件会自动保存在当前文件目录下
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 图形应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 图形应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icemcfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例四：ICEMCFD 图形应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例四：ICEMCFD 图形应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 远程桌面开通
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 进入远程桌面
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 远程桌面窗口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 软件启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 软件启动成功
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 隐藏dock栏
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfd-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例五：CFD-Post图形应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例五：CFD-Post图形应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 实例创建
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 新增实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 设置默认实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 启动软件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 软件安装
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 软件安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      方式一：使用命令终端安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      方式二：使用图形界面安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装案例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装软件使用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 常见问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文件夹过大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 内存不足
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 文件名称中存在空格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 子目录传输
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 一个文件夹内提交多个作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 作业等待
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章 特色功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第五章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第六章 FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 访问用户门户
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 访问用户门户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户注册
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户登录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户退出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP用户申请
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP用户权益
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      重置密码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 仿真计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 仿真计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例一：Abaqus 仿真计算应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例一：Abaqus 仿真计算应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 工程文件上传
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 上传
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 启动应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 作业参数设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 作业提交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 查看输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 计算完成，查看结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starccm" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例二：StarCCM+ 仿真计算应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例二：StarCCM+ 仿真计算应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 启动应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 作业参数设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 作业详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 软件并行设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 在线协同
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 共享作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 共享成员选择
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 共享成功
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 协同作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例三：脚本提交
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例三：脚本提交">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 示例文件获取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 复制建立新的提交文件夹
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 上传自己的计算文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-demosh" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 修改demo.sh文件中的参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 提交作业任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 可至神工坊 [作业管理] 查看本次作业提交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 结果文件会自动保存在当前文件目录下
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 图形应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 图形应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icemcfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例四：ICEMCFD 图形应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例四：ICEMCFD 图形应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 远程桌面开通
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 进入远程桌面
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 远程桌面窗口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 软件启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 软件启动成功
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 隐藏dock栏
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cfd-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例五：CFD-Post图形应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="案例五：CFD-Post图形应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 实例创建
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 新增实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 设置默认实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 启动软件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 软件安装
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 软件安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      方式一：使用命令终端安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      方式二：使用图形界面安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装案例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装软件使用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 常见问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文件夹过大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 内存不足
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 文件名称中存在空格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 子目录传输
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 一个文件夹内提交多个作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 作业等待
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="2">第2章 案例演示</h1>
+<h2 id="21">2.1 访问用户门户</h2>
+<!-- <div id="GUI_app"></div>
+
+<span id="jump">跳转到的地方</span> -->
+
+<p>您可以使用Web浏览器访问"神工坊"高性能仿真平台V2.0用户门户。</p>
+<p>建议您使用Google Chrome或Microsoft Edge浏览器访问。</p>
+<h3 id="_1">用户注册</h3>
+<p>a）打开浏览器，输入神工坊门户地址：<a href="http://simforge.cn/">simforge.cn</a>，单击免费试用，进入平台注册登录页面:
+<img alt="登录页面" src="../figs/simforge-portal.png" /></p>
+<p>b）点击 前往注册 进入注册界面：</p>
+<p><img alt="注册页面" src="../figs/register.png" /></p>
+<p>c）输入用户昵称、邮箱、手机号等相应信息，点击获取验证码，填入手机验证码，立即提交:</p>
+<p><img alt="手机验证码" src="../figs/set-username.png" /></p>
+<p>d）注册成功后，弹出注册成功提醒:</p>
+<p><img alt="注册成功" src="../figs/register-info.png" /></p>
+<p>e）账号及密码会发送至手机短信：（此时账户为试用用户，想成为VIP用户，需进行{ref}<code>VIP用户申请</code>）</p>
+<p><img alt="短信" src="../figs/register-finished.png" /></p>
+<h3 id="_2">用户登录</h3>
+<p>a）注册成功后，用户返回登录界面，或重新输入平台门户，点击登录，进入登录页面，可选择账号登录或者手机号登录：</p>
+<p><img alt="登录" src="../figs/login.png" /></p>
+<p>b）点击登录，即可进入用户门户</p>
+<p><img alt="进入主界面" src="../figs/userportal.png" /></p>
+<!-- ![](figs/fre/desktop-1.png) -->
+
+<h3 id="_3">用户退出</h3>
+<p>a）单击topbar 右上角 用户管理 按钮，下拉框选择 退出，弹窗 单击 确定按钮，完成用户的退出</p>
+<p><img alt="退出" src="../figs/logout.png" /></p>
+<h3 id="vip">VIP用户申请</h3>
+<p>a）登录试用账户后，单击topbar右上角用户管理按钮，下拉框选择 正式用户申请，进入权益升级信息填写界面，填写相关信息，填写完成后，点击提交，等待管理员审核，审核通过后，即可成为VIP用户。</p>
+<p><img alt="免费升级" src="../figs/free_up.png" /></p>
+<p><img alt="转正申请" src="../figs/application.png" /></p>
+<h3 id="vip_1">VIP用户权益</h3>
+<p>相比于试用用户，VIP用户拥有以下权益：</p>
+<ol>
+<li>VIP用户的应用商城中拥有更多的应用，可供正式用户订阅使用。</li>
+<li>VIP用户的并行核数没有上限。</li>
+<li>VIP用户享受更多的技术支持服务，包括但不限于专属技术顾问、软件安装协助等服务。</li>
+</ol>
+<p><center>表 2-1 “神工坊“正式用户可订阅的更多应用</center></p>
+<p><img alt="表格" src="../figs/appstore.png" /></p>
+<h3 id="_4">重置密码</h3>
+<p>用户忘记密码后，可在登录界面点击右下角的忘记密码。</p>
+<p><img alt="忘记密码" src="../figs/password.png" /></p>
+<p>输入注册账号时使用的邮箱，点击获取验证码，邮箱会收到验证码。输入验证码后，点击重置密码，邮箱会收到重置后的密码。</p>
+<p><img alt="重置" src="../figs/password1.png" /></p>
+<h2 id="22">2.2 仿真计算</h2>
+<h3 id="abaqus">案例一：Abaqus 仿真计算应用</h3>
+<p><strong>案例说明</strong>
+本案例展示了最基础的提交仿真计算作业的方式。</p>
+<p><strong>操作演示</strong>
+以下为具体操作步骤。</p>
+<h4 id="1">1. 工程文件上传</h4>
+<ul>
+<li>
+<p>登录平台后，单击底部dock栏 <strong>数据管理</strong><img alt="数据管理" src="../figs/fre/file.png" />图标，打开数据管理窗口，单击<strong>上传文件</strong>按钮，上传工程文件：</p>
+<p><img alt="文件界面" src="../figs/Abaqus-a/uploadfile.png" /></p>
+</li>
+</ul>
+<h4 id="2_1">2. 上传</h4>
+<ul>
+<li>点选或者拖放上传工程文件至平台：
+    <img alt="abaqus-inp" src="../figs/Abaqus-a/abaqus-inp.png" /></li>
+</ul>
+<h4 id="3">3. 启动应用</h4>
+<ul>
+<li>登录平台后，<strong>单击</strong>底部dock栏<strong>仿真计算</strong><img alt="图标" src="../figs/fre/sim.png" />图标，进入仿真计算应用桌面，<strong>双击</strong>桌面<strong>Abaqus-a</strong>软件图标，弹出作业提交界面：
+    <img alt="启动" src="../figs/Abaqus-a/Abaqus-start.png" /></li>
+</ul>
+<h4 id="4">4. 作业参数设置</h4>
+<ul>
+<li>输入作业相关参数，单击<strong>选择文件</strong>，选中上传的工程文件，双击完成选择：
+    <img alt="选择文件" src="../figs/Abaqus-a/Abaqus-selectfile.png" /></li>
+</ul>
+<h4 id="5">5. 作业提交</h4>
+<ul>
+<li>单击提交，完成作业的提交，进入作业详情界面：
+    <img alt="详情" src="../figs/Abaqus-a/Abaqus-job-details.png" /></li>
+</ul>
+<h4 id="6">6. 查看输出</h4>
+<ul>
+<li>单击查看输出，进入作业输出界面：
+    <img alt="输出" src="../figs/Abaqus-a/Abaqus-output.png" /></li>
+</ul>
+<h4 id="7">7. 计算完成，查看结果</h4>
+<ul>
+<li>单击<strong>作业数据</strong>，进入个人文件目录，即可查看输出结果文件。如需关闭后再次查看，请点击下方dock栏<strong>作业管理</strong><img alt="图标" src="../figs/fre/work_mgt.png" />，点击作业号进入。
+    <img alt="结果" src="../figs/Abaqus-a/Abaqus-odb.png" /></li>
+</ul>
+<h3 id="starccm">案例二：StarCCM+ 仿真计算应用</h3>
+<p><strong>案例说明</strong>
+本案例展示了基于“神工坊”V2.0 进行StarCCM+仿真作业及在线协同的基本操作，演示算例是一个千万网格的搅拌器模型。</p>
+<p><strong>操作演示</strong>
+以下展示具体的操作步骤</p>
+<h4 id="1_1">1. 启动应用</h4>
+<ul>
+<li>登录平台后，<strong>单击</strong>底部dock栏<strong>仿真计算</strong><img alt="仿真计算" src="../figs/fre/sim.png" />图标，进入仿真计算应用桌面，<strong>双击</strong>桌面StarCCM-a软件图标，弹出作业提交界面：
+    <img alt="job" src="../figs/StarCCM-job.png" /></li>
+</ul>
+<h4 id="2_2">2. 作业参数设置</h4>
+<ul>
+<li>输入作业相关参数，单击提交，提交计算：</li>
+</ul>
+<p><strong>资源池：</strong> 选择AIP资源池</p>
+<p><strong>GUI：</strong> 图形显示方式，选择VNC</p>
+<p><strong>队列：</strong> 作业提交的队列，仿真计算应用 选择q_x86_sf</p>
+<p><strong>使用节点个数：</strong> 拟使用的节点个数</p>
+<p><strong>每节点核心数：</strong> 每个节点上所使用的核心数  实际使用总CPU核数=使用节点个数 × 每节点核心数，q_x86_sf队列，每节点使用的核心数不能超过128核
+    <img alt="para" src="../figs/StarCCM-a/StarCCMjobpara.png" /></p>
+<h4 id="3_1">3. 作业详情</h4>
+<ul>
+<li>提交后进入作业详情界面，显示作业一些详细信息。单击 图形窗口 按钮，进入软件原生界面：
+    <img alt="info" src="../figs/StarCCM-a/StarCCM-job-info.png" />
+    <img alt="GUI" src="../figs/StarCCM-a/StarCCM-GUI.png" /></li>
+</ul>
+<h4 id="4_1">4. 软件并行设置</h4>
+<ul>
+<li>软件操作同本地一致，其中并行模式选择 parallel on Local Host，并行核数同 2. 步骤中一致
+    <img alt="para" src="../figs/StarCCM-parallel-set.png" /></li>
+</ul>
+<h4 id="5_1">5. 在线协同</h4>
+<ul>
+<li>对于企业用户，在平台有多个用户，可以在线共享图形界面（仅支持VNC模式），单击顶栏功能管理下拉框，选择在线协同：
+    <img alt="co" src="../figs/topbar-cooperate.png" /></li>
+</ul>
+<h4 id="6_1">6. 共享作业</h4>
+<ul>
+<li>弹出的在线协同窗口中选择作业连接页面，选择要共享的作业，单击操作列里的分享按钮：
+    <img alt="job" src="../figs/share-job.png" /></li>
+</ul>
+<h4 id="7_1">7. 共享成员选择</h4>
+<ul>
+<li>弹窗中选择共享模式，选择需要共享给的成员，点击提交：
+    <strong>观察：</strong> 被共享者只可观看图形界面
+    <strong>互动：</strong> 被共享者可操作图形界面
+    <img alt="member" src="../figs/share-job-member.png" /></li>
+</ul>
+<h4 id="8">8. 共享成功</h4>
+<ul>
+<li>共享成功后，作业 操作列 按钮增加断开分享按钮，点击可以端口分共享：
+    <img alt="sharejob" src="../figs/stop-sharejob.png" /></li>
+</ul>
+<h4 id="9">9. 协同作业</h4>
+<ul>
+<li>被共享者，登录桌面后，在 在线协同 界面，协同连接 子页面可以查看被共享的作业，点击连接进入共享界面:
+    <img alt="share" src="../figs/StarCCM-shared.png" /></li>
+</ul>
+<h3 id="_5">案例三：脚本提交</h3>
+<p><strong>案例说明:</strong>
+本案例展示了使用脚本提交仿真计算作业的方式。相较于平台界面提交作业，脚本提交作业更加灵活，依据本教程可快速掌握。示例使用软件为 Abaqus2017</p>
+<p><strong>操作演示:</strong>
+以下展示了具体的操作步骤。</p>
+<h4 id="1_2">1. 示例文件获取</h4>
+<ul>
+<li>点击右上角<img alt="终端打开" src="../figs/script_sub_teaching/terminal_icon.png" />，选择命令终端，打开命令终端窗口
+    <img alt="终端窗口" src="../figs/script_sub_teaching/terminal_interface.png" /></li>
+<li>示例程序位于<code>/share/simforge_share/script_examples</code>目录下，其中包含了提交到各个计算队列的各种软件的脚本模板。</li>
+<li>
+<p>首先需要将示例程序拷贝到用户目录下，在终端上执行命令：</p>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>/share/simforge_share/script_examples<span class="w"> </span>~/script_examples
+</code></pre></div>
+<p><img alt="复制文件的操作过程" src="../figs/script_sub_teaching/copy.png" /></p>
+</li>
+</ul>
+<h4 id="2_3">2. 复制建立新的提交文件夹</h4>
+<ul>
+<li>
+<p>首先进入q_intel_share队列的abaqus2017模板文件夹中：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>q_intel_share/abaqus/2017/beam_stretch/
+</code></pre></div>
+<p><img alt="切换目录" src="../figs/script_sub_teaching/change_directory_example.png" /></p>
+</li>
+<li>
+<p>在提交新作业时，建议建立一个新的作业文件夹：</p>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>beam_stretch<span class="w"> </span>beam_stretch_sub1
+</code></pre></div>
+<p><img alt="复制新的sub文件夹" src="../figs/script_sub_teaching/cp_file.png" /></p>
+</li>
+</ul>
+<h4 id="3_2">3. 上传自己的计算文件</h4>
+<ul>
+<li>把将要运算的inp文件拖动到作业文件夹(beam_stretch_sub1)中：这一步骤可使用<strong>数据管理</strong>的文件管理界面完成操作。</li>
+</ul>
+<h4 id="4-demosh">4. 修改demo.sh文件中的参数</h4>
+<p><strong>方法1:</strong></p>
+<ul>
+<li>
+<p>进入新建立的作业文件夹:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>beam_stretch_sub1
+</code></pre></div>
+</li>
+<li>
+<p>使用vim编辑器打开 demo.sh 文件:</p>
+<div class="highlight"><pre><span></span><code>vim<span class="w"> </span>demo.sh
+</code></pre></div>
+<p><img alt="进入demo" src="../figs/script_sub_teaching/open_demo.png" />
+<img alt="展示demo" src="../figs/script_sub_teaching/vim.png" /></p>
+</li>
+<li>
+<p>点击 <strong>i</strong> 按键. 随后 vim 编辑器下方会显示 <strong>INSERT</strong> 表示进入编辑模式</p>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/vim_insert.png" /></p>
+</li>
+<li>
+<p>在编辑器中修改对应的脚本参数</p>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/edit_demo-0.png" />
+<img alt="展示demo" src="../figs/script_sub_teaching/edit_demo-1.png" /></p>
+</li>
+<li>
+<p>编辑完成后,点击<strong>esc</strong>按键退出编辑模式</p>
+</li>
+<li>
+<p>在vim编辑器的命令行输入<code>:wq</code>，敲击<strong>enter</strong>，保存并退出编辑器</p>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/wq.png" /></p>
+</li>
+</ul>
+<hr />
+<p><strong>方法2:</strong></p>
+<ul>
+<li>
+<p>右键demo文件,点击文本编辑</p>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/right_click.png" /></p>
+</li>
+<li>
+<p>编辑相关内容后,单击编辑器<strong>保存并关闭</strong>按钮,完成编辑</p>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/right_edit.png" /></p>
+</li>
+</ul>
+<h4 id="5_2">5. 提交作业任务</h4>
+<ul>
+<li>
+<p>赋予文件执行权限</p>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>demo.sh
+chmod<span class="w"> </span>+x<span class="w"> </span>submit-q_intel_share.sh
+</code></pre></div>
+</li>
+<li>
+<p>执行submit-q_intel_share.sh文件，可将demo.sh提交至指定队列运行计算</p>
+<div class="highlight"><pre><span></span><code>./submit-q_intel_share.sh<span class="w"> </span>
+</code></pre></div>
+<p><img alt="展示demo" src="../figs/script_sub_teaching/sub.png" /></p>
+</li>
+</ul>
+<h4 id="6_2">6. 可至神工坊 [作业管理] 查看本次作业提交</h4>
+<h4 id="7_2">7. 结果文件会自动保存在当前文件目录下</h4>
+<p><img alt="结果文件" src="../figs/script_sub_teaching/check_result_document.png" /></p>
+<h2 id="23">2.3 图形应用</h2>
+<h3 id="icemcfd">案例四：ICEMCFD 图形应用案例</h3>
+<p><strong>案例说明</strong>
+本案例演示了通过远程桌面（VDI）模式使用ICEMCFD，VDI模式具有更高的流畅度和清晰度，为复杂模型的前后处理工作提供了较好的用户体验。</p>
+<p><strong>操作演示</strong>
+以下为具体操作步骤。</p>
+<h4 id="1_3">1. 远程桌面开通</h4>
+<ul>
+<li>点击桌面底部dock栏<strong>远程桌面</strong><img alt="vdi" src="../figs/fre/vdi.png" />图标，弹出远程桌面开通界面：</li>
+</ul>
+<p><img alt="vdi-apply" src="../figs/vdi-apply.png" /></p>
+<h4 id="2_4">2. 进入远程桌面</h4>
+<ul>
+<li>单击开通后，弹出远程桌面进入界面，单击图标，进入远程桌面</li>
+</ul>
+<p><img alt="vdi-enter" src="../figs/vdi-enter.png" /></p>
+<h4 id="3_3">3. 远程桌面窗口</h4>
+<ul>
+<li>远程桌面窗口如下所示：</li>
+</ul>
+<p><img alt="vdi-desktop" src="../figs/vdi-desktop.png" /></p>
+<h4 id="4_2">4. 软件启动</h4>
+<ul>
+<li>单击底部dock栏<strong>图形应用</strong><img alt="GUI_app" src="../figs/fre/GUI_app.png" />，双击桌面ICEMCFD图标，软件启动：</li>
+</ul>
+<p><img alt="ICEMCFD-start" src="../figs/ICEMCFD-start.png" /></p>
+<h4 id="5_3">5. 软件启动成功</h4>
+<ul>
+<li>软件启动成功后，会自动切换至VDI桌面窗口，软件已启动，软件的操作同用户本地使用一样，具体使用参考ICEMCFD帮助文档</li>
+</ul>
+<p><img alt="vdi-ICEMCFD" src="../figs/vdi-ICEMCFD.png" /></p>
+<h4 id="6-dock">6. 隐藏dock栏</h4>
+<ul>
+<li>
+<p>dock栏会遮挡VDI桌面，影响底部区域的鼠标操作，因此需要隐藏。单击dock中间锁按钮，将其解锁。</p>
+</li>
+<li>
+<p>解锁状态，鼠标移开dock区域，或者单击桌面其他区，dock栏会自动隐藏至桌面底部，鼠标向下划过桌面边界，dock栏再次浮现：</p>
+</li>
+</ul>
+<p><img alt="lock" src="../figs/lock.png" /></p>
+<p><img alt="unlock" src="../figs/unlock.png" /></p>
+<h3 id="cfd-post">案例五：CFD-Post图形应用案例</h3>
+<p><strong>案例说明</strong>
+本案例演示了通过VNC模式使用CFD-Post图形应用，VNC模式支持图形窗口的在线共享。</p>
+<p><strong>操作演示</strong>
+以下为具体操作步骤</p>
+<h4 id="1_4">1. 实例创建</h4>
+<ul>
+<li>右击CFD-Post桌面图标，选择编辑实例：</li>
+</ul>
+<p><img alt="CFD-Post-start" src="../figs/CFD-Post-start.png" /></p>
+<h4 id="2_5">2. 新增实例</h4>
+<ul>
+<li>弹窗弹出实例创建界面，单击右上角新增实例，填写实例参数：</li>
+</ul>
+<p><img alt="CFD-Post-VNC" src="../figs/CFD-Post-VNC.png" /></p>
+<h4 id="3_4">3. 设置默认实例</h4>
+<ul>
+<li>单击保存后新增实例成功，勾选新增实例，单击右上角设置为默认实例按钮，弹窗点击确定，设置CFD-Post图形应用默认启动方式为VNC：</li>
+</ul>
+<p><img alt="CFD-Post-VNC-default" src="../figs/CFD-Post-VNC-default.png" /></p>
+<h4 id="4_3">4. 启动软件</h4>
+<ul>
+<li>双击桌面图标，此时CFD-Post将以VNC模式启动</li>
+</ul>
+<p><img alt="CFD-Post-VNC-start" src="../figs/CFD-Post-VNC-start.png" /></p>
+<h2 id="24">2.4 软件安装</h2>
+<p>如果在应用商城没有找到需要的仿真软件，平台也支持软件安装，主要是通过以下两种方式：</p>
+<h3 id="_6">方式一：使用命令终端安装</h3>
+<p>点击平台界面右上角的功能区，进入命令终端，可以使用命令行（Linux操作系统）进行软件安装。如安装时需加载编译器和库，加载方式见 {ref}<code>加载编译器和库</code>。</p>
+<p><img alt="命令终端入口" src="../figs/install_linux_1.png" /></p>
+<p><img alt="终端页面展示" src="../figs/install_linux_2.png" /></p>
+<h3 id="_7">方式二：使用图形界面安装</h3>
+<p>开通并连接远程桌面后，进入centos 7.9的图形桌面，可以使用图形界面进行安装。</p>
+<p><img alt="远程桌面入口" src="../figs/install_gui_1.png" /></p>
+<p><img alt="开通" src="../figs/install_gui_2.png" /></p>
+<p><img alt="远程桌面" src="../figs/install_gui_3.png" /></p>
+<h3 id="_8">安装案例</h3>
+<p>本次安装以使用图形界面安装Abaqus 614版本软件为例(如其他软件需加载编译器或库，加载方式与使用命令终端安装的加载方式相同)：</p>
+<p><strong>1）</strong> 在右上角的功能区中，点击数据管理，进入个人目录，上传软件安装包。</p>
+<p><img alt="数据管理" src="../figs/install_Abaqus_9.png" /></p>
+<p><strong>2）</strong> 进入远程桌面，点击桌面的Home图标，进入个人目录，找到软件安装包所在位置，点击鼠标右键，选择Open in Terminal,打开命令终端。</p>
+<p><img alt="打开" src="../figs/install_Abaqus_10.png" /></p>
+<p><strong>3）</strong> 解压软件安装包。
+解压zip压缩包命令：unzip xxx.zip
+解压tar压缩包命令：tar -xf xxx.tar</p>
+<p><img alt="解压" src="../figs/install_Abaqus_1.png" /></p>
+<p><strong>4）</strong> 使用命令“/share/ xxx /Abaqus/lnx86_64/setup”（需使用绝对路径）。提示需TMPDIR路径时，使用软件安装位置的路径即可，完成后即可进入Abaqus614的安装界面。</p>
+<p><img alt="2" src="../figs/install_Abaqus_2.png" /></p>
+<p><strong>5）</strong> 点击Next按钮，Installation type阶段，选择Abaqus Product，然后点击Next。</p>
+<p><img alt="3" src="../figs/install_Abaqus_3.png" /></p>
+<p><strong>4）</strong> 在License server中，根据软件官方需求，在License server 1(REQUIRED)中输入相应内容，（如需使用本机名，可使用hostname命令进行查询）,之后点击Next。</p>
+<p><img alt="4" src="../figs/install_Abaqus_4.png" /></p>
+<p><strong>5）</strong> 在Abaqus license servers中，输入官方需求内容，然后点击Next。</p>
+<p><img alt="5" src="../figs/install_Abaqus_5.png" /></p>
+<p><strong>6）</strong> Installation directory阶段，选择安装路径。点击Next后，点击Install。</p>
+<p><img alt="6" src="../figs/install_Abaqus_6.png" /></p>
+<p><strong>7）</strong> 终端出现finished字样，即可使用Abaqus614了。</p>
+<p><img alt="7" src="../figs/install_Abaqus_7.png" /></p>
+<h3 id="_9">安装软件使用</h3>
+<p>以安装的Abaqus 614为例。
+如需要使用软件进行前处理工作，图形界面启动的命令：/share/ xxx /Abaqus/Commands/abaqus cae</p>
+<p>如需使用GPU启动图形界面，命令为：vglrun /share/ xxx /Abaqus/Commands/abaqus cae</p>
+<p>如果只需要提交作业的话，除了使用图形界面提交，还可使用命令行进行本地提交作业。命令为（适用于小规模作业）：/share/ xxx /Abaqus/Commands/abaqus job=xxxx input=xxxx.inp cpus=xx int</p>
+<p><img alt="8" src="../figs/install_Abaqus_8.png" /></p>
+<p>如需使用大规模计算，命令为csub -I -q q_x86_sf -n 8 /share/ xxx /Abaqus/Commands/abaqus job=xxxx input=xxxx.inp cpus=xx int</p>
+<ul>
+<li>-I：交互式。程序输出会打印到终端，终端关闭则程序终止运行。</li>
+<li>-q：后接队列名，如q_x86_sf</li>
+<li>-n：后接程序运行使用核心数</li>
+</ul>
+<p>详细提交方式见 {ref}<code>递交作业</code></p>
+<h2 id="25">2.5 常见问题</h2>
+<h3 id="1_5">1. 文件夹过大</h3>
+<p><img alt="q" src="../figs/Q.png#pic_center" />&ensp;我在提交作业后提示我文件夹大小超过2G，作业无法提交，我该怎么办？<br />
+<img alt="a" src="../figs/A.png" />&ensp;答：作业开始计算前，需要将输入文件所在的文件夹传输到集群主机，如果当前文件夹下存在较大数据，这会增加传输时间。建议您每一个作业都在一个新建立的文件夹中开始计算，一个作业对应一个新的文件夹。  </p>
+<h3 id="2_6">2. 内存不足</h3>
+<p><img alt="q" src="../figs/Q.png" />&ensp;客服提示我作业无故退出的原因是内存不足，这是为什么？<br />
+<img alt="a" src="../figs/A.png" />&ensp;答：计算集群的每个节点都有自己的内存，用于存储该节点正在处理的数据和程序的执行状态。每个计算作业可以使用的内存大小是根据您调取的核心数来确定的，当出现该问题时，您应该适当提高调取的节点数与核心数。如果您的作业确实需要很大的内存，您可以勾选【是否独占队列】，同时【每节点核心数】不要选取最大值，这样整个节点的内存都会为您所用。虽然较少的核心数会导致计算时间变长，但是这样可以使得每核心内存增加，使得计算可以进行下去。  </p>
+<h3 id="3_5">3. 文件名称中存在空格</h3>
+<p><img alt="q" src="../figs/Q.png" />&ensp;我在应用中提交作业的时候，弹窗提示我文件名中不可以有空格，应该怎么办？<br />
+<img alt="a" src="../figs/A.png" />&ensp;答：文件名与文件路径中包含空格会导致在命令行操作和脚本编写中出现问题。为避免此类问题，建议您重命名文件：将文件名中的空格替换为下划线（_）或破折号（-），例如将 example file.txt 重命名为 example_file.txt 或 example-file.txt。并再次检查您的文件上层路径中是否存在空格！  </p>
+<h3 id="4_4">4. 子目录传输</h3>
+<p><img alt="q" src="../figs/Q.png" />&ensp;我发现在应用界面中有一个【是否传输子目录】的选项，这个功能有什么作用呢？  </p>
+<p><img alt="a" src="../figs/open-dir-1.png" />  </p>
+<p><img alt="a" src="../figs/A.png" />&ensp;答：在远程计算资源传输数据的过程中，若不勾选此项，则不会传输作业目录下的文件夹以及其下的文件，若存在文件夹，而又没有勾选此项，文件夹就会被识别为一个空文本文件进行传输，因此当您需要目录下的文件夹以及其下的文件也参与计算时，请勾选此项。 </p>
+<h3 id="5_4">5. 一个文件夹内提交多个作业</h3>
+<p><img alt="q" src="../figs/Q.png" />&ensp;我在应用中提交作业的时候，弹窗提示我当前文件下有作业正在运行，不能提交作业，应该怎么办？<br />
+<img alt="a" src="../figs/A.png" />&ensp;答：这是因为您当前文件夹下有遗留的作业仍未计算完毕，在同一个文件夹下提交两个作业会导致数据传输出现混乱，因此平台做了限制。建议您每一个作业都在一个全新建立的文件夹中开始计算，一个作业对应一个新的文件夹。  </p>
+<h3 id="6_3">6. 作业等待</h3>
+<p><img alt="q" src="../figs/Q.png" />&ensp;我在应用中提交作业的时候，界面显示作业状态处于等待，应该怎么办？<br />
+<img alt="a" src="../figs/A.png" />&ensp;答：这是因为当前使用计算资源的用户较多，如果您提交的作业是1节点×128核心，可以尝试改为2×64核心或者4×32核心提交。如果还是处于等待状态，您可以稍后错峰使用。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

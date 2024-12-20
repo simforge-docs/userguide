@@ -1,0 +1,645 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../chapter_two/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>第一章 简介 - simforge-user-guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="simforge-user-guide" class="md-header__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            simforge-user-guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第一章 简介
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="simforge-user-guide" class="md-nav__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    simforge-user-guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第一章 简介
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第一章 简介
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      符号约定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v20" class="md-nav__link">
+    <span class="md-ellipsis">
+      “神工坊”高性能仿真平台V2.0介绍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      概念及术语
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      平台队列资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_two/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章 特色功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第五章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第六章 FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      符号约定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v20" class="md-nav__link">
+    <span class="md-ellipsis">
+      “神工坊”高性能仿真平台V2.0介绍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      概念及术语
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      平台队列资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="1">第1章 简介</h1>
+<h2 id="_1">文档概述</h2>
+<!-- <div id="GUI_app"></div>
+
+<span id="jump">跳转到的地方</span> -->
+
+<p>本文档提供了有关如何使用”神工坊“高性能仿真平台V2.0用户门户的指导。</p>
+<p>本文档是为需要使用”神工坊“高性能仿真平台V2.0用户门户的人员编写的。本文档的目标读者为工业制造等领域的仿真工程师。</p>
+<h2 id="_2">符号约定</h2>
+<p>本文档使用如下符号约定：</p>
+<p><img alt="" src="../figs/warn.png" /> <strong>警告</strong> 提醒您要小心，以避免误操作导致设备损坏或数据丢失。</p>
+<p><img alt="" src="../figs/notice.png" /> <strong>注意</strong> 强调关键点或提供更多信息，如操作限制、最佳实践或帮助性的建议或参考，作为对正文的补充。</p>
+<p><img alt="" src="../figs/hint.png" /><strong>提示</strong> 表示以下信息将帮助您解决某个问题或节省您的时间</p>
+<h2 id="v20">“神工坊”高性能仿真平台V2.0介绍</h2>
+<p>“神工坊”高性能仿真平台是专为工业制造领域提供高性能工业仿真和仿真软件开发服务在线平台。平台以国家超级计算无锡中心丰富的软件资源和海量的硬件资源为支撑，为用户提供了一个本地“PC”式体验的高性能仿真平台，平台基于高效、低延迟远程传输协议和GPU渲染等方式，给用户提供流畅、清晰的工业仿真软件原生界面操作体验的同时，保留了超算强大算力的支撑。另外，平台支持多级用户管理功能，方便企业整体入驻，为企业提供多级部门管理、在线共享空间、在线分享图形界面等功能，助力企业在线协同研发，提高设计研发效率。
+面向开发用户，平台提供自研软件在线编译、运行服务，并支持自研软件发布至平台应用商城，供平台其他用户订阅使用，并能获取用户使用反馈，协助软件迭代升级。</p>
+<h2 id="_3">概念及术语</h2>
+<p>在您开始使用”神工坊“高性能仿真平台V2.0用户门户前，请先了解下表中所描述的概念和术语。</p>
+<p><center>表 1-1 “神工坊“高性能仿真平台V2.0用户门户 概念和术语</center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">概念</th>
+<th style="text-align: center;">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">主机（host）</td>
+<td style="text-align: center;">集群中提供计算资源的实体，作业在其上被提交或执行。</td>
+</tr>
+<tr>
+<td style="text-align: center;">提交主机（Submission host）</td>
+<td style="text-align: center;">作业在其上被提交的主机。</td>
+</tr>
+<tr>
+<td style="text-align: center;">运行主机（Execution host）</td>
+<td style="text-align: center;">执行作业的主机。</td>
+</tr>
+<tr>
+<td style="text-align: center;">作业（Job）</td>
+<td style="text-align: center;">按照应用实例提交至神工坊应用空间的一组命令。可占用一至多个Job slot。</td>
+</tr>
+<tr>
+<td style="text-align: center;">作业槽（Job slot）</td>
+<td style="text-align: center;">神工坊平台中处理器分配的最小单元。可以是一至多个物理处理器或物理处理器的一部分。默认情况下，一个job slot就是一个处理器核。</td>
+</tr>
+<tr>
+<td style="text-align: center;">队列（Queue）</td>
+<td style="text-align: center;">网络范围内的一个存放作业的地方，负责对不同作业实施调度及管理调度策略。</td>
+</tr>
+<tr>
+<td style="text-align: center;">项目（Project）</td>
+<td style="text-align: center;">网络范围内的一个存放作业的地方，负责对不同作业实施调度及管理调度策略。</td>
+</tr>
+<tr>
+<td style="text-align: center;">密级（secret_level）</td>
+<td style="text-align: center;">系统设置针对项目，作业，用户设置的安全等级。</td>
+</tr>
+<tr>
+<td style="text-align: center;">应用实例</td>
+<td style="text-align: center;">应用实例可以将用户的参数存储为实例，用户切换应用实例完成应用资源选择。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">平台队列资源</h2>
+<p>以下是目前神工坊2.0平台已经接入的硬件资源（更新时间2024.0625）：
+| 名称         |  队列类型|所在集群 |    型号规格          |    集群资源 |
+|:-------:      |:-------:     | :----:    | :----:           |:----:      |<br />
+| q_x86_sfexper | CPU计算队列| 本地AMD集群| AMD EPYC 7H12/7742  |     1*128*512G    |
+| q_x86_sf      |CPU计算队列 |本地AMD集群| AMD EPYC 7H12/7742|     8*128*512G   |
+|  GPU_sf       | GPU图形队列|本地集群| nvidia Quadro P400 |   1*64*128G     |
+|  GPU_RTX      |  GPU图形队列 |本地集群| nvidia Quadro RTX 4000|    1*40*512G    |
+| q_x86_share   |CPU计算队列 | 远程Intel集群| Intel(R) Xeon(R) CPU E5-2680 v3 |    766*24*128G    |
+| q_x86_cn_sim  |CPU计算队列 | 远程Intel集群| Intel(R) Xeon(R) CPU E5-2680 v3 |    5*24*128G    |
+| q_amd_share   |CPU计算队列 | 远程AMD集群  | AMD EPYC 7H12| 500*128*256G    |
+| q_intel_share |CPU计算队列 | 远程Intel集群 | Intel Xeon 8358| 60*64*256G      |
+| wzhcnormal |CPU计算队列 | 远程Hygon集群 | Hygon 7285 | 1561*64*256G   |</p>
+<p><img alt="no" src="../figs/notice.png" /> <strong>注意</strong> :</p>
+<ol>
+<li>远程队列目前仅支持非图形界面方式提交，本地集群支持图形化作业</li>
+<li>仿真计算应用需使用到CPU队列，图形应用需使用到GPU队列</li>
+<li>集群资源格式为：节点数*每节点核数*每节点内存大小</li>
+</ol>
+<p><img alt="warn" src="../figs/warn.png" /> <strong>警告</strong>
+不必要的作业进程注意及时关闭，以免造成队列资源浪费和费用损失</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

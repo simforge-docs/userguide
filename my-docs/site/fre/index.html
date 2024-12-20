@@ -1,0 +1,1672 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter_two/">
+      
+      
+        <link rel="next" href="../feature/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>第三章 案例演示 - simforge-user-guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="simforge-user-guide" class="md-header__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            simforge-user-guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第三章 案例演示
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="simforge-user-guide" class="md-nav__button md-logo" aria-label="simforge-user-guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    simforge-user-guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_one/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_two/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第三章 案例演示
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第三章 案例演示
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      界面总览
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="界面总览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      底部dock栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      顶部topbar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      桌面应用图标区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      外部链接区
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      图形应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图形应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vncvdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC与VDI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仿真计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算的BATCH模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算的GUI模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仿真计算的GUI模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vnc-vdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC 与 VDI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作业管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      查询作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      停止作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新调度作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业置顶、置底
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业VNC图形窗口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新提交作业参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      设置优先级
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      历史作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是作业数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是个人目录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看个人目录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人目录下的文件操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业数据列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      查询作业数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      删除作业数据
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用商城
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="应用商城">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用订阅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用退订
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用评价
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用文档下载
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      队列资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章 特色功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第五章 案例演示
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第六章 FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      界面总览
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="界面总览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      底部dock栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      顶部topbar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      桌面应用图标区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      外部链接区
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      图形应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图形应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vncvdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC与VDI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仿真计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算的BATCH模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      仿真计算的GUI模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仿真计算的GUI模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vnc-vdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC 与 VDI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作业管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      查询作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      停止作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新调度作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业置顶、置底
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业VNC图形窗口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      重新提交作业参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      设置优先级
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      历史作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是作业数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是个人目录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看个人目录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人目录下的文件操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看作业数据列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      查询作业数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      删除作业数据
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用商城
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="应用商城">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用订阅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用退订
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用评价
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用文档下载
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      队列资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="3">第3章 常用功能</h1>
+<h2 id="_1">界面总览</h2>
+<p><img alt="desk" src="../figs/fre/desktop-1.png" /></p>
+<h3 id="dock">底部dock栏</h3>
+<p>dock栏集成了平台常用的几个功能，通过中间按钮控制dock栏的显示模式：
+按钮为<img alt="lock" src="../figs/fre/lock.png" /> 时，dock为显示模式，一直浮现在页面最上层
+按钮为<img alt="unlock" src="../figs/fre/unlock.png" /> 时，dock为自动隐藏模式，鼠标单击桌面其他区域，或者离开dock区域超过2s，则dock栏自动隐藏至页面底部，鼠标下滑过页面底部dock栏将浮现出来。</p>
+<p>dock栏包含：</p>
+<ul>
+<li>{ref}<code>图形应用</code></li>
+<li>{ref}<code>仿真计算</code></li>
+<li>
+<p>{ref}<code>远程桌面</code></p>
+</li>
+<li>
+<p>{ref}<code>作业管理</code></p>
+</li>
+<li>{ref}<code>数据管理</code></li>
+<li>{ref}<code>应用商城</code></li>
+</ul>
+<h3 id="topbar">顶部topbar</h3>
+<p>顶部topbar含有以下几个功能按钮：
+- 应用收纳
+- 功能管理
+  - {ref}<code>作业管理</code>
+  - {ref}<code>在线协同</code>
+  - {ref}<code>数据管理</code>
+  - {ref}<code>队列资源</code>
+  - {ref}<code>应用商城</code>
+  - {ref}<code>远程桌面</code>
+  - {ref}<code>命令终端</code>
+- 组织管理
+  - {ref}<code>用户管理</code>
+  - {ref}<code>组织账单</code>
+- 个人功能
+  - {ref}<code>用户信息</code>
+  - {ref}<code>密码管理</code>
+  - {ref}<code>个性化配置</code>
+  - {ref}<code>余额管理</code>
+  - {ref}<code>用户账单</code>
+  - {ref}<code>产品价格</code>
+  - {ref}<code>私有应用</code>
+  - {ref}<code>帮助文档</code>
+  - {ref}<code>用户退出</code>
+- 消息通知
+  - {ref}<code>消息提醒设置</code></p>
+<h3 id="_2">桌面应用图标区</h3>
+<p>桌面应用图标区显示用户已订阅的的应用图标</p>
+<h3 id="_3">外部链接区</h3>
+<p>显示神工坊相关外部链接
+- 帮助文档
+- 技术邻专栏
+- 平台公众号
+- 客服微信</p>
+<h2 id="_4">图形应用</h2>
+<!-- <div id="GUI_app"></div>
+
+<span id="jump">跳转到的地方</span> -->
+
+<p><img alt="" src="../figs/GUI_app.png" />  </p>
+<p>设计类、可视化类应用软件，需提交至GPU渲染队列以使用GPU加速渲染功能。</p>
+<h3 id="_5">基本使用</h3>
+<p>双击应用图标，即可打开应用。</p>
+<p><img alt="" src="../figs/fre/gui-app.png" /></p>
+<h3 id="_6">配置实例</h3>
+<p>右击应用图标</p>
+<p><img alt="" src="../figs/fre/right-clicked-gui.png" /></p>
+<ul>
+<li><strong>设置默认实例：</strong> 选择双击打开的应用实例。</li>
+<li><strong>编辑实例：</strong> 用户自定义实例。</li>
+<li><strong>软件点评：</strong> 用户对软件进行评价。</li>
+<li><strong>隐藏应用：</strong> 将软件图标隐藏，移入收纳区。</li>
+</ul>
+<p>点击编辑实例进入实例编辑界面，一般存在一个系统默认实例，即<strong>基本使用</strong>中双击打开的实例。</p>
+<p><img alt="" src="../figs/fre/instance_default.png" /></p>
+<p>点击<strong>新增实例</strong>，根据需要修改参数，例如：</p>
+<ul>
+<li>实例名称：VDI</li>
+<li>资源池：AIP资源池</li>
+<li>图形界面：VDI方式</li>
+<li>队列：GPU_sf</li>
+<li>限制运行时长：30</li>
+<li>CPU核数：1</li>
+</ul>
+<p><img alt="" src="../figs/fre/instance_set.png" /></p>
+<p>点击保存，即可查看新增的实例。左侧勾选后，点击<strong>设置为默认实例</strong>将新增的实例设置为默认。</p>
+<p><img alt="" src="../figs/fre/instance_set_default.png" /></p>
+<h3 id="vncvdi">VNC与VDI</h3>
+<p>图形界面分为VDI方式和VNC方式。前者需付费开通{ref}<code>远程桌面</code>，后者无需额外步骤。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">图形界面</th>
+<th style="text-align: center;">额外操作</th>
+<th style="text-align: center;">是否额外付费</th>
+<th style="text-align: center;">性能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">VDI</td>
+<td style="text-align: center;">开通远程桌面</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">高</td>
+</tr>
+<tr>
+<td style="text-align: center;">VNC</td>
+<td style="text-align: center;">无需额外步骤</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">一般</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">仿真计算</h2>
+<p><img alt="" src="../figs/sim.png" /> </p>
+<p>仿真求解类软件，需提交至CPU计算队列。</p>
+<h3 id="_8">基本使用</h3>
+<p>按钮介绍：</p>
+<ul>
+<li><strong>提交</strong>：提交作业。</li>
+<li><strong>重置</strong>：清空配置的参数。</li>
+<li><strong>保存为实例</strong>：将该应用配置的参数保存，可设为默认参数打开，无需每次在界面配置参数。参见{ref}<code>配置实例</code>。</li>
+</ul>
+<p><img alt="sim" src="../figs/fre/sim_func.png" /></p>
+<h3 id="batch">仿真计算的BATCH模式</h3>
+<p>若<strong>GUI</strong>开关为<strong>否</strong>，则为BATCH模式。适用于大规模计算。队列请选择CPU计算队列。</p>
+<p><img alt="batch" src="../figs/fre/abaqus-batch.png" /></p>
+<h3 id="gui">仿真计算的GUI模式</h3>
+<p>若<strong>GUI</strong>开关为<strong>是</strong>，则为GUI模式启动。适用于进行简单的前后处理并且在GUI界面提交作业。队列请选择GPU渲染队列。</p>
+<p><img alt="gui" src="../figs/fre/abaqus-gui.png" /></p>
+<p><img alt="hint" src="../figs/hint.png" /><strong>提示</strong> 若需要使用更高性能的前后处理，请使用<strong>图形应用</strong>下相应的软件。</p>
+<h4 id="vnc-vdi">VNC 与 VDI</h4>
+<p>GUI模式下，图形界面分为VDI方式和VNC方式。前者需付费开通{ref}<code>远程桌面</code>，后者无需额外步骤。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">图形界面</th>
+<th style="text-align: center;">额外操作</th>
+<th style="text-align: center;">是否额外付费</th>
+<th style="text-align: center;">性能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">VDI</td>
+<td style="text-align: center;">开通远程桌面</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">高</td>
+</tr>
+<tr>
+<td style="text-align: center;">VNC</td>
+<td style="text-align: center;">无需额外步骤</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">一般</td>
+</tr>
+</tbody>
+</table>
+<!-- [图形应用](#fre.md图形应用)
+
+[点击跳转](#jump)
+
+
+[特色功能](./fre.md) -->
+<!-- ## 远程桌面
+
+![](figs/vdi.png) 
+
+远程桌面提供给用户一个具备图形界面的**Linux虚拟机**，图形应用通过GPU渲染后会显示在远程桌面中。用户还可以在远程桌面中通过命令行执行相关命令，如程序编译、运行、脚本执行等。远程桌面挂载了用户的存储空间，可直接通过命令行访问存储目录。
+
+### 远程桌面开通
+
+点击![](figs/fre/vdi.png)进入远程桌面，选择规格，点击开通。
+
+![](figs/fre/vdi-open.png)
+### 远程桌面退订
+点击其他功能按钮 > 远程桌面 > 退订
+
+![](figs/fre/vdi-close.png)
+### 远程桌面使用
+远程桌面为Linux虚拟机，使用方式与一般Linux桌面相同相同。
+
+![](figs/fre/centos.png) -->
+<h2 id="_9">作业管理</h2>
+<p><img alt="mgt" src="../figs/work_mgt.png" /> </p>
+<p>在作业管理视图中，用户可根据不同的字段组合查找目标作业，用户还可根据作业状态进行停止、暂停、恢复、重新调度、优先级调整、延长作业时间、查看输出等操作。重新调度的作业会被停止并重新启动，但作业号保持不变。为了调整作业调度顺序，用户可对自己名下处于等待状态的作业进行作业优先级设置、置顶或置底操作。系统支持对多个作业进行批量操作，所以作业操作系统都会根据状态的变化发送作业通知。</p>
+<h3 id="_10">什么是作业</h3>
+<p>用户在平台运行设计桌面及仿真计算应用都会生成相应的作业。为了方便用户对自己的作业进行生命周期管理，系统提供统一的作业管理视图。每个作业有唯一的<strong>作业号</strong>。</p>
+<p>作业的状态包括：</p>
+<ul>
+<li>运行：正在运行的作业。</li>
+<li>等待：等待资源的作业。</li>
+<li>完成：作业正常结束。</li>
+<li>退出：作业退出或以非0退出码结束。</li>
+<li>未知：作业的运行主机失去联系，导致作业状态未知。</li>
+<li>僵尸：作业进程异常，需要人工干预。</li>
+<li>出错：作业因未知原因出错。</li>
+</ul>
+<h3 id="_11">查看作业列表</h3>
+<p>点击作业管理<img alt="mgt" src="../figs/fre/work_mgt.png" />在作业列表中查看系统中当前用户的所有作业的基本信息，包括作业号、作业名、所属用户、应用、队列、状态、提交时间、开始时间、结束时间、所属项目、所属资源池以及作业优先级。在列表中单击某个作业的作业号，将跳转至该作业的详情页面：</p>
+<p><img alt="mgt" src="../figs/fre/job-mgt.png" /></p>
+<p><strong>基本信息</strong>标签页：</p>
+<ul>
+<li>作业基本信息：该作业的提交主机、运行主机、部件、作业目录、执行命令等；</li>
+<li>作业资源信息：该作业的线程数、CPU实际时间、内存使用量、交换分区使用量等；</li>
+</ul>
+<p><img alt="details" src="../figs/fre/job-details.png" /></p>
+<p><strong>作业数据</strong>标签页：</p>
+<ul>
+<li>查看作业的输入文件、输出文件等。可在此区域对作业数据中的文件夹及文件进行操作。支持的操作包括（但不限于）：文件/文件夹的新建、复制、剪切、删除、创建副本、预览、查看详情、创建压缩包
+  <img alt="res" src="../figs/fre/result.png" /></li>
+</ul>
+<h3 id="_12">查询作业</h3>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表右上方单击查询按钮<img alt="" src="../figs/inquiry.png" /> 。</li>
+<li>在展开的查询条件区域中设置一个或多个查询条件，如作业号、作业名或作业的所属应用等，单击查询。作业列表中将展示查询结果。</li>
+<li>在作业列表上方单击重置按钮，将再次按照当前的查询条件进行查询，刷新作业列表。</li>
+</ol>
+<p><img alt="se" src="../figs/fre/job-search.png" /></p>
+<h3 id="_13">停止作业</h3>
+<p>杀掉未运行完成的作业。</p>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表中选择一个或多个要停止的作业，单击停止</li>
+<li>在弹出的确认对话框内单击确定。作业将退出。</li>
+</ol>
+<p><img alt="" src="../figs/attention.png" /><strong>注意</strong> 除“退出”及“完成”状态以外的作业均可执行此操作。</p>
+<p><img alt="" src="../figs/warn.png" /><strong>警告</strong> 此操作为高危操作，且不可逆转，请慎重。作业被成功停止后即变为“退出”状态。</p>
+<h3 id="_14">重新调度作业</h3>
+<p>重新调度的作业会被停止并重新启动，但作业号保持不变。</p>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表中选择一个或多个要重新调度的作业，单击重新调度。</li>
+<li>在弹出的确认对话框内单击确定。</li>
+</ol>
+<p><img alt="" src="../figs/attention.png" /><strong>注意</strong> 除“退出“及”完成“状态以外的作业均可执行此操作。</p>
+<p><img alt="" src="../figs/warn.png" /><strong>警告</strong> 此操作为高危操作，且不可逆转，请慎重。作业被重新调度时将先被停止，然后再被调度和启动，有可能出现调度等待等状况。</p>
+<h3 id="_15">查看作业输出</h3>
+<ol>
+<li>点击作业管理<img alt="work" src="../figs/fre/work_mgt.png" />，在作业列表中选择一个“运行”状态的作业，单击查看输出。</li>
+<li>在弹出的页面上查看作业输出。</li>
+</ol>
+<p><img alt="out" src="../figs/fre/job-output.png" /></p>
+<p><img alt="hint" src="../figs/hint.png" /><strong>提示</strong> 也可以在作业的详情页面上进行查看输出操作：</p>
+<ul>
+<li>在作业列表中单击要查看输出的作业的作业号，进入其详情页面。</li>
+<li>在页面顶部单击查看输出。</li>
+<li>在弹出的页面上查看作业输出。</li>
+</ul>
+<p><img alt="mgt" src="../figs/fre/job-mgt-1.png" /></p>
+<p><img alt="out" src="../figs/fre/job-output2.png" /></p>
+<h3 id="_16">作业置顶、置底</h3>
+<p>为了调整作业调度顺序，用户可对自己提交的且当前处于等待状态的作业进行置顶操作。</p>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表中选择一个要置顶的作业，单击作业置顶。</li>
+<li>在弹出的确认对话框内单击确定。此操作执行成功后，当该作业可被系统调度执行时，将在其所在的作业队列中被<strong>优先调度</strong>。</li>
+</ol>
+<p><img alt="" src="../figs/attention.png" /><strong>注意</strong> 仅“等待”或“等待时暂停”状态的作业可执行此操作。</p>
+<p>为了调整作业调度顺序，用户可对自己提交的且当前处于等待状态的作业进行作业置底操作。</p>
+<ol>
+<li>在作业列表中选择一个要置底的作业，单击作业置底。</li>
+<li>在弹出的确认对话框内单击确定。此操作执行成功后，当该作业可被系统调度执行时，将在其所在的作业队列中最后被调度。</li>
+</ol>
+<p><img alt="" src="../figs/attention.png" /><strong>注意</strong> 仅“等待”或“等待时暂停”状态的作业可执行此操作。</p>
+<p><img alt="" src="../figs/hint.png" /><strong>提示</strong> 也可以在作业的详情页面上进行作业置底操作：
+- 在作业列表中单击要置底的作业的作业号，进入其详情页面。
+- 在页面顶部单击作业置底。
+- 在弹出的确认对话框内单击确定。</p>
+<h3 id="vnc">作业VNC图形窗口</h3>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表中单击一个要进入其图形窗口的作业的作业号，进入其详情。</li>
+<li>在该作业的详情页面右上角单击<strong>图形窗口</strong>。</li>
+<li>在打开的作业图形窗口中进行操作。</li>
+</ol>
+<p><img alt="mgt" src="../figs/fre/job-mgt-2.png" /></p>
+<p><img alt="vnc" src="../figs/fre/vnc-desktop.png" /></p>
+<p><img alt="hint" src="../figs/hint.png" /><strong>提示</strong> 也可以通过作业管理作业号右边小图标<img alt="hint" src="../figs/web.png" />进入。</p>
+<h3 id="_17">重新提交作业参数</h3>
+<ol>
+<li>点击作业管理<img alt="mgt" src="../figs/fre/work_mgt.png" />，在作业列表中单击要重新提交参数的作业的作业号，进入其详情页面。</li>
+<li>在该作业的详情页面右上角单击提交参数。</li>
+<li>在弹出的提交参数对话框上查看当前作业的参数配置，可根据需要修改参数或保持当前参数不变，单击提交。将重新生成一个作业。</li>
+</ol>
+<p><img alt="mgt" src="../figs/fre/job-mgt-2.png" /></p>
+<p><img alt="par" src="../figs/fre/job-sub-para.png" /></p>
+<h3 id="_18">设置优先级</h3>
+<p>为了调整作业调度顺序，用户可对自己提交的且当前处于等待状态的作业进行设置作业优先级的操作。</p>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业列表中勾选需重新设置优先级的作业号。</li>
+<li>在作业管理页面右上角单击设置优先级。</li>
+<li>在弹出的设置优先级对话框上查看当前作业的当前优先级（默认为50），优先级输入范围为1~100,数字越大优先程度越高，可根据需要修改作业优先级或保持当前作业优先级不变，单击确认。此操作执行成功后，当该作业可被系统调度执行时，将在其所在的作业队列中按照作业优先级的大小进行调度。</li>
+</ol>
+<h3 id="_19">历史作业</h3>
+<p>在作业管理模块中，系统还将显示当前系统的历史作业，历史作业是系统按照设置的过期时间自动将近期作业转换而成的。在历史作业中管理员可以进行数据追溯。</p>
+<p><img alt="" src="../figs/fre/job-history.png" /> </p>
+<ol>
+<li>点击作业管理<img alt="" src="../figs/fre/work_mgt.png" />，在作业管理页面左上方点击历史作业。</li>
+<li>页面显示已成为历史作业的作业数据。展示和近期作业一样。</li>
+</ol>
+<h2 id="_20">数据管理</h2>
+<p><img alt="" src="../figs/file.png" /> </p>
+<p>系统针对作业数据、用户个人目录和{ref}<code>共享空间</code>提供了完备的数据管理功能。</p>
+<p>“神工坊”高性能仿真平台为增强作业数据的管理，以列表方式展示作业数据信息。在作业数据页面中，用户可根据不同的搜索条件查找属于自己名下作业条目。作业数据列表显示作业名、作业目录、归档状态、删除状态、数据大小等核心信息，通过链接方式可快速定位作业数据目录和作业详情。</p>
+<h3 id="_21">什么是作业数据</h3>
+<p>在作业数据管理<img alt="file" src="../figs/fre/file.png" />中，用户可删除或归档选定作业的数据内容，作业数据删除是清除作业目录下的输入输出文件，可有效节省空间。作业归档是对重要作业进行单独保存，防止误删或遗忘，可以帮助用户管理其重要作业数据，归档目录由管理员单独配置。作业归档操作可反复执行，每次归档都将覆盖既有文件。
+用户的作业数据保存在用户的作业目录下，默认为:</p>
+<div class="highlight"><pre><span></span><code>/share/simforge_home/&lt;组织名&gt;/&lt;用户名&gt;
+</code></pre></div>
+<h3 id="_22">什么是个人目录</h3>
+<p>用户个人目录是以可视化的形式展示用户目录下的全部可用目录、数据文件及文件夹，用户可以选择特定文件分享到其权限下的共享组或项目空间。系统支持一个用户拥有多个数据目录，不同的数据目录可分属集群中不同的存储，此功能可快速帮助用户进行存储扩容。</p>
+<h3 id="_23">查看个人目录</h3>
+<ol>
+<li>在数据管理页面<img alt="file" src="../figs/fre/file.png" />上的左侧导航树中单击个人目录。</li>
+<li>在右侧图形化界面上查看个人目录下的文件夹及文件信息。用户的个人目录通过管理员在管理门户进行对用户的目录设置：</li>
+</ol>
+<p><img alt="" src="../figs/fre/personal-dir.png" /> </p>
+<h3 id="_24">个人目录下的文件操作</h3>
+<ol>
+<li>在数据管理页面<img alt="file" src="../figs/fre/file.png" />上的左侧导航树中单击个人目录。</li>
+<li>
+<p>在右侧图形化界面上对个人目录下的文件夹及文件信息进行操作。支持的操作包括（但不限于）：</p>
+</li>
+<li>
+<p>文件/文件夹的新建、复制、剪切、删除、创建副本、预览、查看详情、创建压缩包</p>
+</li>
+<li>图标视图/列表视图切换、转到上一级文件夹</li>
+<li>文件共享 可将个人目录文件共享至项目或者共享空间</li>
+</ol>
+<p><img alt="" src="../figs/fre/new-file.png" /></p>
+<p><img alt="" src="../figs/fre/right-clicked.png" /> </p>
+<ol>
+<li>删除文件时，选择需要删除的文件，右键点击后，选择删除，提示文件会移至垃圾箱，点击删除按钮后，文件会移至个人目录下的Trash文件夹。在Trash文件夹中选中文件，右键点击后，选择删除，文件就会彻底删除。</li>
+</ol>
+<p><img alt="" src="../figs/fre/delete.png" /></p>
+<p><img alt="" src="../figs/fre/trash.png" /> </p>
+<h3 id="_25">查看作业数据列表</h3>
+<ol>
+<li>在数据管理页面<img alt="" src="../figs/fre/file.png" />上的左侧导航树中单击作业数据。</li>
+<li>在作业数据列表中查看当前用户的所有作业数据的信息，包括各作业数据所对应的作业的作业号、作业名称、所属应用、所属队列、作业状态、提交时间、开始时间、结束时间、所属项目、资源池以及优先级。</li>
+<li>在列表中单击某条作业数据的作业号，将跳转至该作业的详情页面。</li>
+<li>在作业详情页面可点击作业数据，页面切换该作业的作业目录，将跳转至该作业数据的文件页面，可在此页面上进行常见的文件操作。</li>
+</ol>
+<p><img alt="" src="../figs/fre/job-data.png" /> </p>
+<h3 id="_26">查询作业数据</h3>
+<ol>
+<li>在数据管理页面<img alt="" src="../figs/fre/file.png" />上的左侧导航树中单击作业数据。</li>
+<li>在作业数据列表右上方单击查询按钮<img alt="" src="../figs/inquiry.png" />。</li>
+<li>在展开的查询条件区域中设置一个或多个查询条件，如作业号、作业数据目录、作业所属应用等，单击查询。作业数据列表中将展示查询结果。</li>
+<li>在作业列表上方单击重置按钮，将再次按照当前的查询条件进行查询，刷新作业列表。</li>
+</ol>
+<!-- ### 归档作业数据
+
+作业数据归档是对重要作业进行单独保存，防止误删或遗忘，可以帮助用户管理其重要作业数据。归档目录由管理员单独配置。作业归档操作可反复执行，每次归档都将覆盖既有文件。 -->
+
+<h3 id="_27">删除作业数据</h3>
+<ol>
+<li>在数据管理页面<img alt="" src="../figs/fre/file.png" />上的左侧导航树中单击作业数据。</li>
+<li>在作业数据列表中选择一个或多个作业数据，单击删除数据。</li>
+<li>在弹出的确认对话框内单击确认。</li>
+</ol>
+<p><img alt="" src="../figs/attention.png" /><strong>注意</strong> “运行”状态或“等待”状态的作业的作业数据无法删除。</p>
+<p><img alt="" src="../figs/warn.png" /><strong>警告</strong> 此操作为高危操作，且不可逆转，请慎重。如作业数据未归档且未通过其他形式备份，被删除后将无法找回。</p>
+<!-- ### 共享空间
+
+请至[特色功能](./feature.md)中查看 -->
+<h2 id="_28">应用商城</h2>
+<p><img alt="" src="../figs/app_sub.png" /> </p>
+<h3 id="_29">应用订阅</h3>
+<p><img alt="" src="../figs/fre/app-store.png" /> </p>
+<ol>
+<li>应用商城分上下两部分，上半部分为用户已订阅应用，下部分为商城全部应用</li>
+<li>用户根据应用简介选择合适应用，点击“申请订阅”按钮，完成应用订阅申请</li>
+<li>后台管理员收到订阅申请，审核通过后会显示在已订阅应用</li>
+</ol>
+<p><img alt="" src="../figs/fre/apply-book.png" /> </p>
+<h3 id="_30">应用退订</h3>
+<ol>
+<li>应用商城分上下两部分，上半部分为用户已订阅应用，下部分为商城全部应用</li>
+<li>用户选择需要退订的应用，单击 退订按钮，应用退订成功</li>
+<li>应用退订后，再次申请订阅需要重新审核，请谨慎退订</li>
+</ol>
+<p><img alt="" src="../figs/fre/unapply-book.png" /> </p>
+<h3 id="_31">应用评价</h3>
+<ol>
+<li>右击桌面已订阅应用，选择软件点评。</li>
+<li>软件评分界面分为上下两部分，上半部分为应用的评价情况，下半部分为用户点评区域。</li>
+<li>输入点评内容，选项评分等级，点击提交。</li>
+</ol>
+<p><img alt="" src="../figs/fre/evaluate.png" /> </p>
+<p><img alt="" src="../figs/fre/evaluate-sub.png" /> </p>
+<h3 id="_32">应用文档下载</h3>
+<p>在应用商城上半部分“已订阅应用”部分点击右侧“查看”，即可查看管理员发布的应用文档（不局限于应用使用文档，还可能包括仿真应用测试文件等）。</p>
+<p><img alt="" src="../figs/fre/doc-download.png" /> </p>
+<h2 id="_33">队列资源</h2>
+<ul>
+<li>点击<strong>其他功能</strong><img alt="" src="../figs/fre/other.png" />，在下拉列表中选择<strong>队列资源</strong>。</li>
+<li>队列名：队列名称。一般为CPU计算队列x86_sf和图形渲染队列GPU_sf。</li>
+<li>最大可用作业槽数：一般可以认为是该队列最大处理器核数。默认情况下，一个作业槽就是一个处理器核。</li>
+<li>运行的作业槽数：占用的处理器核数。</li>
+<li>可用的作业槽数：可供提交的处理器核数。</li>
+</ul>
+<p><img alt="queue" src="../figs/fre/queue.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
